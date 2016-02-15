@@ -1,3 +1,4 @@
+#encoding:utf-8
 from django.contrib import admin
 
 from kstore.models import BasicConfiguration, Supplier, Manufacturer, Product, MailMessage, MailContact
@@ -13,7 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class MailMessageAdmin(admin.ModelAdmin):
-    list_display = ['subject', 'sender', 'recipient', 'readed', 'sended']
+    list_display = ['subject','uuid','sended_at', 'sender', 'recipient', 'readed', 'sended']
 
 admin.site.register(BasicConfiguration)
 admin.site.register(Product, ProductAdmin)

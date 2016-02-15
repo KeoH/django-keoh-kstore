@@ -1,10 +1,13 @@
+#encoding:utf-8
 from django.views.generic import TemplateView
 
 from kstore.helpers.mixins import JerarquiaMixin
 
+from braces.views import LoginRequiredMixin
+
 from kstore.models import Product
 
-class ProductView(JerarquiaMixin, TemplateView):
+class ProductView(LoginRequiredMixin, JerarquiaMixin, TemplateView):
     template_name = 'kstore/products/index.html'
     jerarquia = ['Catalogo', 'Productos']
 

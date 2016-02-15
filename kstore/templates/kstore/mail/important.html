@@ -1,12 +1,12 @@
 {% extends "kstore/mail/mail_base.html" %}
 {% load i18n %}
 
-{% block jerarquia_description %}{% trans "Your inbox" %}{% endblock %}
+{% block jerarquia_description %}{% trans "Your important messages" %}{% endblock %}
 
 {% block inbox_content %}
   <div class="Inbox">
     <header class="InboxHeader">
-      <h1>Inbox</h1>
+      <h1>Important messages</h1>
       <form action="">
         <input type="text" placeholder="Search ...">
         <button type="submit">

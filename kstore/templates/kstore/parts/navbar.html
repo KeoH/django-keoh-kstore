@@ -20,7 +20,9 @@
         <a class="NavBarDropdownItemName" href="{% url 'kstore:mail:inbox' %}">
           My Inbox
         </a>
-        <span class="NavBarDropdownNotificationInItem">{{ num_unread_messages }}</span>
+        {% if num_unread_messages != 0 %}
+          <span class="NavBarDropdownNotificationInItem">{{ num_unread_messages }}</span>
+        {% endif %}
       </li>
     </ul>
   </div>

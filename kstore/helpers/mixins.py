@@ -1,3 +1,4 @@
+#encoding:utf-8
 from datetime import date, timedelta, datetime
 from kstore.helpers.dates import get_week
 
