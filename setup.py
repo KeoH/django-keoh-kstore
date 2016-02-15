@@ -2,20 +2,20 @@
 import os
 from setuptools import setup
 
-README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
+README = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django-keoh-userprofile',
-    version='0.0.4',
-    packages=['user_profile'],
+    name='django-keoh-kstore',
+    version='0.0.2',
+    packages=['kstore'],
     include_package_data=True,
     license='BSD License',
-    description='A simple Django app with extended User model',
+    description='A simple Django app to create shops',
     long_description=README,
-    url='https://github.com/KeoH/django-keoh-userprofile',
+    url='https://github.com/KeoH/django-keoh-kstore',
     author='Francisco Manzano Magaña',
     author_email='keoh77@gmail.com',
     classifiers=[
