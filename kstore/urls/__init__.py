@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^user/', include('user_profile.urls', namespace='userprofile')),
     url(r'^products/', include('kstore.urls.products', namespace='products')),
+    url(r'^blog/', include('kblog.urls.blogmanager', namespace='blog-manager')),
     url(r'^mail/', include('kstore_mail.urls.mail', namespace='mail')),
 ]
